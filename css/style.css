@@ -34,6 +34,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .container-font{
     display: flex;
@@ -156,11 +157,14 @@ input{
 }
 #enviar{
     background-color: #43aa8b;
-    box-shadow: 4px 4px 6px 0px #000000
+    box-shadow: 4px 4px 6px 0px #000000;
+    cursor: pointer;
+        
 }
 #limpar{
     background-color: #f94144;
-    box-shadow: 4px 4px 6px 0px #000000
+    box-shadow: 4px 4px 6px 0px #000000;
+    cursor: pointer;
 }
 /*################################MODO ESCURO##################################*/
 .switch-shadow{
