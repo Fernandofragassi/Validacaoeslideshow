@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <title>Formulario e Slideshow em JS</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <button class="button-nav" onclick="calculo()">Formulario</button>
+            <div class="container-font">
+                <p class="font-margin">Tamanho da Fonte</p>
+                <button class="button-nav font-margin" name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+                <button class="button-nav font-margin" name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+            </div>
+            <div class="container-checkbox">
+                <input id="switch-shadow" type="checkbox"/>
+                <label for="switch-shadow">Modo escuro</label>
+            </div>
+        </nav>
+    </header>
+    <h1>Slide Show</h1>
+    <section class="slideshow">
+        
+        <div class="arrow"><img id="left" src="img/left-arrow.png" alt=""></div>
+        <div id="canvas"></div>
+        <div class="arrow"><img id="right" src="img/right-arrow.png" alt=""></div>
+    </section>
+    <h1>Formulario de cadastro</h1>
+    <section>
+        <form class="form-container" id="formulario" action="" name="formulario" onsubmit="validar()">
+                <span id="error"></span>
+                <input type="text" placeholder="Nome" id="nome" name="nome">           
+                <input type="text" placeholder="Sobrenome" name="nome" id="sobrenome">          
+                <input type="text" placeholder="Sexo" name="nome" id="sexo">           
+                <input type="text" placeholder="CPF" name="nome" id="cpf">            
+                <input type="text" placeholder="Email" name="nome" id="email">            
+                <input type="text" placeholder="Telefone" name="nome" id="telefone">                        
+                <input type="text" placeholder="Estado" name="nome" id="estado">            
+                <input type="text" placeholder="Cidade" name="nome" id="cidade">           
+                <input type="text" placeholder="Rua" name="nome" id="rua">            
+                <input type="text" placeholder="Número" name="nome" id="número">
+            
+            <button type="submit" onclick="return validar()" class="form-botao" id="enviar">enviar</button>
+            <button type="reset" class="form-botao" id="limpar">limpar</button>
+        </form>      
+    </section>
+
+    <script src="/js/slideshow.js"></script>
+    <script src="/js/validar.js"></script>
+    
+</body>
+</html>
