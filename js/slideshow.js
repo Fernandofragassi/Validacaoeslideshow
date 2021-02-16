@@ -58,7 +58,8 @@ function calculo(){
 
     if (resposta == true) {
         var msg = window.prompt(`Qual é Seu nome?`)
-    } else {         
+    } else {window.document.getElementById('nome').innerText("")
+             
     }
 
     window.document.getElementById('nome').value = msg
